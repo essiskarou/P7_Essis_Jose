@@ -1,2 +1,2 @@
 # P7_Essis_Jose
-Implémentez un modèle de scoring
+P7_Essis_Jose Implementez un modele de scoring
