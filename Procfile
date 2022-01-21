@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run app_3_P7.py
+web: gunicorn app:app
