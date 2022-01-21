@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="37a51d29-236d-4012-9626-492c58bb64a5" name="Changes" comment="test_final_1">
+      <change beforePath="$PROJECT_DIR$/P7_01_dossier_model/Code_de_modelisation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/P7_01_dossier_model/Code_de_modelisation.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P7_01_dossier_model/P7_api/app_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/P7_01_dossier_model/P7_api/app_3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P7_01_dossier_model/P7_dashboard/Prêt_à_dépenser.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P7_01_dossier_model/P7_dashboard/app_3_P7.py" beforeDir="false" afterPath="$PROJECT_DIR$/P7_01_dossier_model/P7_dashboard/app_3_P7.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P7_01_dossier_model/P7_dashboard/config_dash_07.ini" beforeDir="false" afterPath="$PROJECT_DIR$/P7_01_dossier_model/P7_dashboard/config_dash_07.ini" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="12407968-1d8e-41ab-89c1-32405c049ea9" />
+        <option name="url" value="git@github.com:essiskarou/P7_Essis_Jose.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProjectId" id="23KQUQBlQa8dlNrmdz7AiA41Ul0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="CSS" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/P7_01_dossier_model/P7_dashboard" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/P7_01_dossier_model/P7_dashboard" />
+      <recent name="$PROJECT_DIR$/P7_03_api" />
+      <recent name="$PROJECT_DIR$/P7_02_dashboard" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="37a51d29-236d-4012-9626-492c58bb64a5" name="Changes" comment="" />
+      <created>1641480314312</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1641480314312</updated>
+    </task>
+    <task id="LOCAL-00001" summary="change with Pycharm">
+      <created>1642072354270</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1642072354270</updated>
+    </task>
+    <task id="LOCAL-00002" summary="change with Pycharm">
+      <created>1642072408396</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1642072408396</updated>
+    </task>
+    <task id="LOCAL-00003" summary="change with Pycharm">
+      <created>1642072479521</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1642072479521</updated>
+    </task>
+    <task id="LOCAL-00004" summary="change with Pycharm final">
+      <created>1642072490813</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1642072490813</updated>
+    </task>
+    <task id="LOCAL-00005" summary="change with Pycharm">
+      <created>1642072921713</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1642072921713</updated>
+    </task>
+    <task id="LOCAL-00006" summary="test">
+      <created>1642073249319</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1642073249319</updated>
+    </task>
+    <task id="LOCAL-00007" summary="test_final">
+      <created>1642073541515</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1642073541515</updated>
+    </task>
+    <task id="LOCAL-00008" summary="test_final">
+      <created>1642073548931</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1642073548931</updated>
+    </task>
+    <task id="LOCAL-00009" summary="test_final">
+      <created>1642073625607</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1642073625607</updated>
+    </task>
+    <task id="LOCAL-00010" summary="test_final">
+      <created>1642073733751</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1642073733751</updated>
+    </task>
+    <task id="LOCAL-00011" summary="test_final">
+      <created>1642074455711</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1642074455711</updated>
+    </task>
+    <task id="LOCAL-00012" summary="test_final_1">
+      <created>1642076667307</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1642076667307</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="change with Pycharm final" />
+    <MESSAGE value="change with Pycharm" />
+    <MESSAGE value="test" />
+    <MESSAGE value="test_final" />
+    <MESSAGE value="test_final_1" />
+    <option name="LAST_COMMIT_MESSAGE" value="test_final_1" />
+  </component>
+</project>
