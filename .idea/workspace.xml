@@ -5,6 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37a51d29-236d-4012-9626-492c58bb64a5" name="Changes" comment="test_final_1">
+      <change afterPath="$PROJECT_DIR$/P7_01_dossier_model/P7_api/requirement1s.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/P7_01_dossier_model/P7_api/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Runtime.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old setup/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old setup/setup.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirement1s.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/P7_01_dossier_model/Code_de_modelisation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/P7_01_dossier_model/Code_de_modelisation.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/P7_01_dossier_model/P7_api/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/P7_01_dossier_model/P7_api/app.py" afterDir="false" />
