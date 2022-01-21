@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37a51d29-236d-4012-9626-492c58bb64a5" name="Changes" comment="test_final_1">
-      <change beforePath="$PROJECT_DIR$/P7_01_dossier_model/Code_de_modelisation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/P7_01_dossier_model/Code_de_modelisation.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/P7_01_dossier_model/P7_api/app_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/P7_01_dossier_model/P7_api/app_3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P7_01_dossier_model/P7_dashboard/Prêt_à_dépenser.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/P7_01_dossier_model/P7_dashboard/app_3_P7.py" beforeDir="false" afterPath="$PROJECT_DIR$/P7_01_dossier_model/P7_dashboard/app_3_P7.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P7_01_dossier_model/P7_dashboard/config_dash_07.ini" beforeDir="false" afterPath="$PROJECT_DIR$/P7_01_dossier_model/P7_dashboard/config_dash_07.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
