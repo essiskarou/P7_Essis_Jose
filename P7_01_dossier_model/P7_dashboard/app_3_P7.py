@@ -31,9 +31,6 @@ PATH_PICKLE = '../P7_api/pickle/'
 URL = "http://127.0.0.1"
 API = "http://127.0.0.1:5000"
 
-URL_IMG = "http://192.168.1.72"
-IMG = "http://192.168.1.72:8501"
-
 # chargemet de la base X
 X = pickle.load(open(PATH_PICKLE+'X.pickle', 'rb'))
 # chargemet de la base X_train
@@ -396,8 +393,8 @@ with col5:
 
                 fig.update_layout(
                     title="Comparaison à un groupe de clients similaires",
-                    xaxis_title="X Axis Title",
-                    yaxis_title="Y Axis Title",
+                    xaxis_title="EXT_SOURCE_2",
+                    yaxis_title="EXT_SOURCE_3",
                     legend_title="Legend",
                     font=dict(
                         family="Courier New, monospace",

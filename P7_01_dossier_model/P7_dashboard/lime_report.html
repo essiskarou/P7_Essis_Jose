@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div2ESG5VWUFC4N8NU"></div>
+        <div class="lime top_div" id="top_divXTEQ9PIMLGN318T"></div>
         
         <script>
-        var top_div = d3.select('#top_div2ESG5VWUFC4N8NU').classed('lime top_div', true);
+        var top_div = d3.select('#top_divXTEQ9PIMLGN318T').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["O", "1"], [0.2103417581616279, 0.7896582418383723]);
+            var pp = new lime.PredictProba(pp_svg, ["O", "1"], [0.7988021607366378, 0.20119783926336246]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["O", "1"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["EXT_SOURCE_2", -0.08718294786419845], ["EXT_SOURCE_3", -0.07864321214588198], ["DAYS_BIRTH", 0.02921616237739404], ["DAYS_EMPLOYED", 0.026769456584366316], ["DAYS_ID_PUBLISH", 0.02074527003252659], ["AMT_GOODS_PRICE", -0.020291467888785227], ["DAYS_EMPLOYED_PERC", -0.018240033036004216], ["DAYS_LAST_PHONE_CHANGE", 0.011590804330944353], ["PAYMENT_RATE", 0.008107931172641478], ["INCOME_PER_PERSON", -0.007854569298684678]], 1, exp_div);
+                exp.show([["EXT_SOURCE_2", -0.08349433571093594], ["EXT_SOURCE_3", -0.07957071564393828], ["DAYS_EMPLOYED", 0.025908972515111227], ["DAYS_BIRTH", 0.023452550377277497], ["DAYS_ID_PUBLISH", 0.01800119608840085], ["AMT_GOODS_PRICE", -0.01783733886724179], ["DAYS_EMPLOYED_PERC", -0.014096252834940063], ["AMT_ANNUITY", 0.013321102481370133], ["DAYS_LAST_PHONE_CHANGE", 0.005025015572171291], ["ANNUITY_INCOME_PERC", 0.0028751413248980125]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_tabular([["EXT_SOURCE_2", "0.31", -0.08718294786419845], ["EXT_SOURCE_3", "0.16", -0.07864321214588198], ["DAYS_BIRTH", "0.89", 0.02921616237739404], ["DAYS_EMPLOYED", "0.96", 0.026769456584366316], ["DAYS_ID_PUBLISH", "0.71", 0.02074527003252659], ["AMT_GOODS_PRICE", "0.08", -0.020291467888785227], ["DAYS_EMPLOYED_PERC", "0.09", -0.018240033036004216], ["DAYS_LAST_PHONE_CHANGE", "0.74", 0.011590804330944353], ["PAYMENT_RATE", "0.38", 0.008107931172641478], ["INCOME_PER_PERSON", "0.01", -0.007854569298684678]], 1, raw_div);
+            exp.show_raw_tabular([["EXT_SOURCE_2", "0.83", -0.08349433571093594], ["EXT_SOURCE_3", "0.62", -0.07957071564393828], ["DAYS_EMPLOYED", "0.56", 0.025908972515111227], ["DAYS_BIRTH", "0.42", 0.023452550377277497], ["DAYS_ID_PUBLISH", "0.83", 0.01800119608840085], ["AMT_GOODS_PRICE", "0.03", -0.01783733886724179], ["DAYS_EMPLOYED_PERC", "0.60", -0.014096252834940063], ["AMT_ANNUITY", "0.02", 0.013321102481370133], ["DAYS_LAST_PHONE_CHANGE", "0.94", 0.005025015572171291], ["ANNUITY_INCOME_PERC", "0.04", 0.0028751413248980125]], 1, raw_div);
         
         </script>
         </body></html>
