@@ -6,7 +6,7 @@ import matplotlib
 import json
 import plotly.graph_objects as go
 import urllib
-import pickle
+import pickle5 as pickle
 import seaborn as sns
 import shap
 import dill
