@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37a51d29-236d-4012-9626-492c58bb64a5" name="Changes" comment="test_final_1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P7_01_dossier_model/P7_dashboard/app_3_P7.py" beforeDir="false" afterPath="$PROJECT_DIR$/P7_01_dossier_model/P7_dashboard/app_3_P7.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P7_01_dossier_model/P7_dashboard/feature_importance_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/P7_01_dossier_model/P7_dashboard/feature_importance_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P7_01_dossier_model/P7_dashboard/lime_report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P7_01_dossier_model/P7_api/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/P7_01_dossier_model/P7_api/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +104,7 @@
       <updated>1641480314312</updated>
       <workItem from="1642935300138" duration="473000" />
       <workItem from="1642952854031" duration="8568000" />
-      <workItem from="1642968766622" duration="18494000" />
+      <workItem from="1642968766622" duration="19306000" />
     </task>
     <task id="LOCAL-00001" summary="change with Pycharm">
       <created>1642072354270</created>

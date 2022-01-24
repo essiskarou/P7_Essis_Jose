@@ -2,7 +2,6 @@ import numpy as np
 import pandas as pd
 from flask import Flask, request, jsonify, render_template
 import pickle5 as pickle
-import dill
 
 #########################
 SEUIL = 0.5752224859896156
