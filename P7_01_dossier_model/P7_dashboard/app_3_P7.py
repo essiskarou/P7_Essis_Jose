@@ -1,29 +1,18 @@
 import numpy as np
 import streamlit as st
 import pandas as pd
-import time
 import matplotlib.pyplot as plt
 import matplotlib
 import json
 import plotly.graph_objects as go
 import urllib
 import pickle
-import dill
 import seaborn as sns
 import shap
-
+import dill
 from urllib.request import urlopen
-# from streamlit.report_thread import get_report_ctx
 import requests
-
 import configparser
-
-# a tester
-import matplotlib
-#matplotlib.use('MacOSX')
-######
-
-KEY = "P7"
 
 seuil = 0.5752224859896156
 
@@ -118,7 +107,7 @@ if (numclient != ""):
     col1, col2 = st.columns(2)
     col3, col4 = st.columns(2)
     col5, col6 = st.columns(2)
-    col7, col8 = st.columns(2)
+    #col7, col8 = st.columns(2)
 
     response = urlopen(API + "/api/client/" + str(numclient))
 
@@ -127,10 +116,7 @@ if (numclient != ""):
     proba0 = float(data_json["proba0"])
     seuil = float(data_json["seuil"])
     json = data_json["json"]
-    json_1 = data_json["json_1"]
-    json_0 = data_json["json_0"]
-    json_0_5 = data_json["json_0_5"]
-    json_1_1 = data_json["json_1_1"]
+    neighbors = data_json["json_1"]
 
 
 
@@ -297,117 +283,117 @@ with col5:
         st.pyplot()
 
 
-        # la liste des 20 voisins similaires dans une dataframe
-        voisins_20 = pd.read_json(json_1)
-        neighbors_0 = pd.read_json(json_0)
-        neighbors_0_5 = pd.read_json(json_0_5)
-        neighbors_1_1 = pd.read_json(json_1_1)
-        print(voisins_20)
-        with col7:
-            # Selections = st.multiselect('What are your favorite colors',
-            # variable_list,variable_list )
-            plt.figure(figsize=(10, 6))
-            plt.title("Distribution of %s" % "test")
-
-            # fig = sns.scatterplot(data=voisins_20, x='EXT_SOURCE_2', y='EXT_SOURCE_3', hue="predict_proba")
-            # fig = sns.scatterplot(data=train_2.loc[train_2['SK_ID_CURR'] == int(autre_clients)], x='EXT_SOURCE_2',
-            #                      y='EXT_SOURCE_3', color='cyan', s=150)
-
-            import plotly.graph_objects as go
-
-            fig = go.Figure(layout=go.Layout(height=400, width=600))
-
-            # Add traces
-            # fig.add_trace(go.Scatter(x=groupes_clients['EXT_SOURCE_2'], y=groupes_clients['EXT_SOURCE_3'], mode='markers',name='predict_proba'))
-            fig.add_trace(
-                go.Scatter(x=neighbors_1_1['EXT_SOURCE_2'], y=neighbors_1_1['EXT_SOURCE_3'], mode='markers', name='1'))
-            fig.add_trace(
-                go.Scatter(x=neighbors_0['EXT_SOURCE_2'], y=neighbors_0['EXT_SOURCE_3'], mode='markers', name='0'))
-            fig.add_trace(
-                go.Scatter(x=neighbors_0_5['EXT_SOURCE_2'], y=neighbors_0_5['EXT_SOURCE_3'], mode='markers',
-                           name='0,5'))
-            fig.add_trace(
-                go.Scatter(x=train_2.loc[train_2['SK_ID_CURR'] == int(numclient)]['EXT_SOURCE_2'],
-                           y=train_2.loc[train_2['SK_ID_CURR'] == int(numclient)]['EXT_SOURCE_3'],
-                           mode='lines+markers', name='client',
-                           marker=dict(
-                               color='black',
-                               size=10,
-                               line=dict(
-                                   color='yellow',
-                                   width=5
-                               )
-                           )))
-
-            fig.update_layout(
-                title="Comparaison à un groupe",
-                xaxis_title="X Axis Title",
-                yaxis_title="Y Axis Title",
-                legend_title="Legend",
-                font=dict(
-                    family="Courier New, monospace",
-                    size=18,
-                    color="RebeccaPurple"
-                ))
-
-            col8.plotly_chart(fig, use_container_width=True)
-            # fig.show()
-
-            plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0., fontsize=18)
-            st.set_option('deprecation.showPyplotGlobalUse', False)
-
-            with col8:
-                #Selections = st.multiselect('What are your favorite colors',
-                                         #variable_list,variable_list )
-                plt.figure(figsize=(10, 6))
-                plt.title("Distribution of %s" % "test")
-
-                #fig = sns.scatterplot(data=voisins_20, x='EXT_SOURCE_2', y='EXT_SOURCE_3', hue="predict_proba")
-                #fig = sns.scatterplot(data=train_2.loc[train_2['SK_ID_CURR'] == int(autre_clients)], x='EXT_SOURCE_2',
-                #                      y='EXT_SOURCE_3', color='cyan', s=150)
-
-                import plotly.graph_objects as go
-
-                fig = go.Figure(layout=go.Layout(height=400, width=600))
-
-                # Add traces
-                # fig.add_trace(go.Scatter(x=groupes_clients['EXT_SOURCE_2'], y=groupes_clients['EXT_SOURCE_3'], mode='markers',name='predict_proba'))
-                fig.add_trace(
-                    go.Scatter(x=neighbors_1_1['AMT_INCOME_TOTAL'], y=neighbors_1_1['DAYS_EMPLOYED_PERC'], mode='markers', name='1'))
-                fig.add_trace(
-                    go.Scatter(x=neighbors_0['AMT_INCOME_TOTAL'], y=neighbors_0['DAYS_EMPLOYED_PERC'], mode='markers', name='0'))
-                fig.add_trace(
-                    go.Scatter(x=neighbors_0_5['AMT_INCOME_TOTAL'], y=neighbors_0_5['DAYS_EMPLOYED_PERC'], mode='markers',
-                               name='0,5'))
-                fig.add_trace(
-                    go.Scatter(x=train_2.loc[train_2['SK_ID_CURR'] == int(autre_clients)]['AMT_INCOME_TOTAL'], y=train_2.loc[train_2['SK_ID_CURR'] == int(autre_clients)]['DAYS_EMPLOYED_PERC'],
-                               mode='lines+markers', name='client',
-                               marker=dict(
-                                   color='black',
-                                   size=10,
-                                   line=dict(
-                                       color='yellow',
-                                       width=5
-                                   )
-                               )))
-
-                fig.update_layout(
-                    title="Comparaison à un groupe de clients similaires",
-                    xaxis_title="EXT_SOURCE_2",
-                    yaxis_title="EXT_SOURCE_3",
-                    legend_title="Legend",
-                    font=dict(
-                        family="Courier New, monospace",
-                        size=18,
-                        color="RebeccaPurple"
-                    ))
-
-                col8.plotly_chart(fig, use_container_width=True)
-                #fig.show()
-
-                plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0., fontsize=18)
-                st.set_option('deprecation.showPyplotGlobalUse', False)
-                #st.pyplot()
+        ## la liste des 20 voisins similaires dans une dataframe
+        #voisins_20 = pd.read_json(json_1)
+        #neighbors_0 = pd.read_json(json_0)
+        #neighbors_0_5 = pd.read_json(json_0_5)
+        #neighbors_1_1 = pd.read_json(json_1_1)
+        #print(voisins_20)
+        #with col7:
+        #    # Selections = st.multiselect('What are your favorite colors',
+        #    # variable_list,variable_list )
+        #    plt.figure(figsize=(10, 6))
+        #    plt.title("Distribution of %s" % "test")
+#
+        #    # fig = sns.scatterplot(data=voisins_20, x='EXT_SOURCE_2', y='EXT_SOURCE_3', hue="predict_proba")
+        #    # fig = sns.scatterplot(data=train_2.loc[train_2['SK_ID_CURR'] == int(autre_clients)], x='EXT_SOURCE_2',
+        #    #                      y='EXT_SOURCE_3', color='cyan', s=150)
+#
+        #    import plotly.graph_objects as go
+#
+        #    fig = go.Figure(layout=go.Layout(height=400, width=600))
+#
+        #    # Add traces
+        #    # fig.add_trace(go.Scatter(x=groupes_clients['EXT_SOURCE_2'], y=groupes_clients['EXT_SOURCE_3'], mode='markers',name='predict_proba'))
+        #    fig.add_trace(
+        #        go.Scatter(x=neighbors_1_1['EXT_SOURCE_2'], y=neighbors_1_1['EXT_SOURCE_3'], mode='markers', name='1'))
+        #    fig.add_trace(
+        #        go.Scatter(x=neighbors_0['EXT_SOURCE_2'], y=neighbors_0['EXT_SOURCE_3'], mode='markers', name='0'))
+        #    fig.add_trace(
+        #        go.Scatter(x=neighbors_0_5['EXT_SOURCE_2'], y=neighbors_0_5['EXT_SOURCE_3'], mode='markers',
+        #                   name='0,5'))
+        #    fig.add_trace(
+        #        go.Scatter(x=train_2.loc[train_2['SK_ID_CURR'] == int(numclient)]['EXT_SOURCE_2'],
+        #                   y=train_2.loc[train_2['SK_ID_CURR'] == int(numclient)]['EXT_SOURCE_3'],
+        #                   mode='lines+markers', name='client',
+        #                   marker=dict(
+        #                       color='black',
+        #                       size=10,
+        #                       line=dict(
+        #                           color='yellow',
+        #                           width=5
+        #                       )
+        #                   )))
+#
+        #    fig.update_layout(
+        #        title="Comparaison à un groupe",
+        #        xaxis_title="X Axis Title",
+        #        yaxis_title="Y Axis Title",
+        #        legend_title="Legend",
+        #        font=dict(
+        #            family="Courier New, monospace",
+        #            size=18,
+        #            color="RebeccaPurple"
+        #        ))
+#
+        #    col8.plotly_chart(fig, use_container_width=True)
+        #    # fig.show()
+#
+        #    plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0., fontsize=18)
+        #    st.set_option('deprecation.showPyplotGlobalUse', False)
+#
+        #    with col8:
+        #        #Selections = st.multiselect('What are your favorite colors',
+        #                                 #variable_list,variable_list )
+        #        plt.figure(figsize=(10, 6))
+        #        plt.title("Distribution of %s" % "test")
+#
+        #        #fig = sns.scatterplot(data=voisins_20, x='EXT_SOURCE_2', y='EXT_SOURCE_3', hue="predict_proba")
+        #        #fig = sns.scatterplot(data=train_2.loc[train_2['SK_ID_CURR'] == int(autre_clients)], x='EXT_SOURCE_2',
+        #        #                      y='EXT_SOURCE_3', color='cyan', s=150)
+#
+        #        import plotly.graph_objects as go
+#
+        #        fig = go.Figure(layout=go.Layout(height=400, width=600))
+#
+        #        # Add traces
+        #        # fig.add_trace(go.Scatter(x=groupes_clients['EXT_SOURCE_2'], y=groupes_clients['EXT_SOURCE_3'], mode='markers',name='predict_proba'))
+        #        fig.add_trace(
+        #            go.Scatter(x=neighbors_1_1['AMT_INCOME_TOTAL'], y=neighbors_1_1['DAYS_EMPLOYED_PERC'], mode='markers', name='1'))
+        #        fig.add_trace(
+        #            go.Scatter(x=neighbors_0['AMT_INCOME_TOTAL'], y=neighbors_0['DAYS_EMPLOYED_PERC'], mode='markers', name='0'))
+        #        fig.add_trace(
+        #            go.Scatter(x=neighbors_0_5['AMT_INCOME_TOTAL'], y=neighbors_0_5['DAYS_EMPLOYED_PERC'], mode='markers',
+        #                       name='0,5'))
+        #        fig.add_trace(
+        #            go.Scatter(x=train_2.loc[train_2['SK_ID_CURR'] == int(autre_clients)]['AMT_INCOME_TOTAL'], y=train_2.loc[train_2['SK_ID_CURR'] == int(autre_clients)]['DAYS_EMPLOYED_PERC'],
+        #                       mode='lines+markers', name='client',
+        #                       marker=dict(
+        #                           color='black',
+        #                           size=10,
+        #                           line=dict(
+        #                               color='yellow',
+        #                               width=5
+        #                           )
+        #                       )))
+#
+        #        fig.update_layout(
+        #            title="Comparaison à un groupe de clients similaires",
+        #            xaxis_title="EXT_SOURCE_2",
+        #            yaxis_title="EXT_SOURCE_3",
+        #            legend_title="Legend",
+        #            font=dict(
+        #                family="Courier New, monospace",
+        #                size=18,
+        #                color="RebeccaPurple"
+        #            ))
+#
+        #        col8.plotly_chart(fig, use_container_width=True)
+        #        #fig.show()
+#
+        #        plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0., fontsize=18)
+        #        st.set_option('deprecation.showPyplotGlobalUse', False)
+        #        #st.pyplot()
 
 
 

@@ -7,6 +7,18 @@
     <list default="true" id="37a51d29-236d-4012-9626-492c58bb64a5" name="Changes" comment="test_final_1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/P7_01_dossier_model/Code_de_modelisation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/P7_01_dossier_model/Code_de_modelisation.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P7_01_dossier_model/P7_api/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/P7_01_dossier_model/P7_api/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P7_01_dossier_model/P7_api/app_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/P7_01_dossier_model/P7_api/app_3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P7_01_dossier_model/P7_api/pickle/X.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/P7_01_dossier_model/P7_api/pickle/X.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P7_01_dossier_model/P7_api/pickle/neighbors_0.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P7_01_dossier_model/P7_api/pickle/neighbors_0_5.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P7_01_dossier_model/P7_api/pickle/neighbors_1.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P7_01_dossier_model/P7_api/pickle/train_2.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/P7_01_dossier_model/P7_api/pickle/train_2.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P7_01_dossier_model/P7_api/pickle/voisin_20.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P7_01_dossier_model/P7_dashboard/app_3_P7.py" beforeDir="false" afterPath="$PROJECT_DIR$/P7_01_dossier_model/P7_dashboard/app_3_P7.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P7_01_dossier_model/P7_dashboard/feature_importance_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/P7_01_dossier_model/P7_dashboard/feature_importance_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P7_01_dossier_model/P7_dashboard/feature_importance_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/P7_01_dossier_model/P7_dashboard/feature_importance_5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P7_01_dossier_model/P7_dashboard/lime_report.html" beforeDir="false" afterPath="$PROJECT_DIR$/P7_01_dossier_model/P7_dashboard/lime_report.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +51,12 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="23KQUQBlQa8dlNrmdz7AiA41Ul0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -48,9 +66,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="CSS" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/P7_01_dossier_model/P7_dashboard" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="StringManipulation" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -58,6 +82,30 @@
       <recent name="$PROJECT_DIR$/P7_03_api" />
       <recent name="$PROJECT_DIR$/P7_02_dashboard" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -67,6 +115,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1641480314312</updated>
+      <workItem from="1642935300138" duration="473000" />
+      <workItem from="1642952854031" duration="8568000" />
+      <workItem from="1642968766622" duration="5914000" />
     </task>
     <task id="LOCAL-00001" summary="change with Pycharm">
       <created>1642072354270</created>
@@ -155,6 +206,9 @@
     <option name="localTasksCounter" value="13" />
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -165,7 +219,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="change with Pycharm final" />
@@ -174,5 +227,16 @@
     <MESSAGE value="test_final" />
     <MESSAGE value="test_final_1" />
     <option name="LAST_COMMIT_MESSAGE" value="test_final_1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

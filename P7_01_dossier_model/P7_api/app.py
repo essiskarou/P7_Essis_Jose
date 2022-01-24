@@ -2,19 +2,14 @@ import numpy as np
 import pandas as pd
 from flask import Flask, request, jsonify, render_template
 import pickle
-import warnings
-import configparser
-from hashlib import sha256
+import dill
 
-warnings.simplefilter(action='ignore', category=FutureWarning)
-
+#########################
 SEUIL = 0.5752224859896156
-
-KEY = "P7"
 PATH_PICKLE = 'pickle/'
 
+########################
 app = Flask(__name__)
-
 # chargemet du pickle du modèle
 model = pickle.load(open(PATH_PICKLE+'model.pkl', 'rb'))
 # chargemet de la base X_train
@@ -25,11 +20,7 @@ X = pickle.load(open(PATH_PICKLE+'X.pickle', 'rb'))
 train_2 = pickle.load(open(PATH_PICKLE+'train_2.pickle', 'rb'))
 
 # chargemet de la base des voisins
-voisins_20 = pickle.load(open(PATH_PICKLE+'voisin_20.pickle', 'rb'))
-# chargemet de la base des voisins detaillée
-neighbors_0 = pickle.load(open(PATH_PICKLE+'neighbors_0.pickle', 'rb'))
-neighbors_0_5 = pickle.load(open(PATH_PICKLE+'neighbors_0_5.pickle', 'rb'))
-neighbors_1 = pickle.load(open(PATH_PICKLE+'neighbors_1.pickle', 'rb'))
+neighbors = pickle.load(open(PATH_PICKLE+'neighbors.pickle', 'rb'))
 
 
 #id_X = X.reset_index()
@@ -65,10 +56,7 @@ def client(id_client):
     dico["proba0"] = str(round(y_proba[0][0] * 100, 2))
     dico["proba1"] = str(round(y_proba[0][1] * 100, 2))
     dico["seuil"] = str(SEUIL * 100)
-    dico["json_1"] = voisins_20.to_json()
-    dico["json_0"] = neighbors_0.to_json()
-    dico["json_0_5"] = neighbors_0_5.to_json()
-    dico["json_1_1"] = neighbors_1.to_json()
+    dico["json_1"] = neighbors.to_json()
 
 
     dico["json"] = (X.iloc[index:index + 1]).to_json()

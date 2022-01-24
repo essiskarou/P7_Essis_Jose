@@ -4,7 +4,7 @@ from flask import Flask, request, jsonify, render_template
 import pickle
 import warnings
 import configparser
-from hashlib import sha256
+import dill
 
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
@@ -80,22 +80,6 @@ def client(id_client):
     dico["variables_princ"] = list(df_variables_princi)
 
     return jsonify(dico)
-
-
-# la liste des 20 voisins similaires dans une dataframe
-# 20 voisins solvable avec des scores de predict_proba au dessus de 70%
-# 20 voisins solvable de justesse avec des scores de predict_proba autour de 50%
-# 20 voisins non solvable avec des scores de predict_proba en dessous de 30%
-
-##dico_1 = {}
-#@app.route('/api/voisins_similaires')
-#def voisins_similaires():
-#    voisins_similaires = voisins_20
-#    print(voisins_similaires)
-#    return voisins_similaires
-#    #return jsonify(dico_1)
-
-
 
 if __name__ == '__main__':
     app.run(debug=True)
