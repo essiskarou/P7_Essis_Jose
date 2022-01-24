@@ -1,2 +1,5 @@
-# P7_Essis_Jose
-P7_Essis_Jose Implementez un modele de scoring
+# P7_api
+
+# Api avec Flask 
+
+retourne les resultats du modele, etc 
